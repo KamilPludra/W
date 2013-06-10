@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class StronyStatyczneController - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/strony_statyczne_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-calculate">#calculate</a>
+    
+    <li><a href="#method-i-home">#home</a>
+    
+    <li><a href="#method-i-kontakt">#kontakt</a>
+    
+    <li><a href="#method-i-onas">#onas</a>
+    
+    <li><a href="#method-i-pomoc">#pomoc</a>
+    
+    <li><a href="#method-i-szereg">#szereg</a>
+    
+    <li><a href="#method-i-szeregu">#szeregu</a>
+    
+    <li><a href="#method-i-szereguj">#szereguj</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/README.html">README</a>
+  
+    <li class="file"><a href="./controller.html">controller</a>
+  
+    <li class="file"><a href="./install.html">install</a>
+  
+    <li class="file"><a href="./public/robots_txt.html">robots</a>
+  
+    <li class="file"><a href="./publicNOWE/robots_txt.html">robots</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ActiveSupport.html">ActiveSupport</a>
+  
+    <li><a href="./ActiveSupport/TestCase.html">ActiveSupport::TestCase</a>
+  
+    <li><a href="./WS.html">WS</a>
+  
+    <li><a href="./WS/Application.html">WS::Application</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./StronyStatyczneController.html">StronyStatyczneController</a>
+  
+    <li><a href="./StronyStatyczneHelper.html">StronyStatyczneHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class StronyStatyczneController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-calculate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calculate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="calculate-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">calculate</span>
+
+
+  <span class="ruby-identifier">ary</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">uszeregowane</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">liste</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listx</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">liste2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">liste3</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt3</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koniec</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">koniec2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszty_e</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">koszty_t</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+
+  <span class="ruby-identifier">ary</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:ary</span>][<span class="ruby-value">0</span>]
+
+  <span class="ruby-identifier">det</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:d</span>]
+  <span class="ruby-identifier">alf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:alfa</span>]
+  <span class="ruby-identifier">bet</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:beta</span>]
+
+  <span class="ruby-identifier">alfa</span> = <span class="ruby-identifier">alf</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">beta</span> = <span class="ruby-identifier">bet</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">d</span> = <span class="ruby-identifier">det</span>.<span class="ruby-identifier">to_i</span>
+
+
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i2</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i3</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-identifier">e</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">e2</span> = <span class="ruby-value">0</span>
+
+
+  <span class="ruby-identifier">t</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">t2</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">t3</span> = <span class="ruby-value">0</span>
+
+
+  <span class="ruby-identifier">list</span> = <span class="ruby-identifier">ary</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&#39;, &#39;</span>)
+  <span class="ruby-identifier">list</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">el</span><span class="ruby-operator">|</span> <span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">el</span>)) }
+  <span class="ruby-identifier">koniec</span> = <span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">x</span> } .<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-identifier">koniec2</span> =<span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">x</span> }
+
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt</span>.<span class="ruby-identifier">size</span>)
+
+      <span class="ruby-identifier">liste</span>[<span class="ruby-identifier">e</span>]=<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+      <span class="ruby-identifier">e</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">listt</span>[<span class="ruby-identifier">t</span>]=<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+      <span class="ruby-identifier">t</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment">################### liczebnik</span>
+
+  <span class="ruby-identifier">iii</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">m</span> =<span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">liczebnik</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-keyword">while</span>  <span class="ruby-identifier">iii</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-identifier">liczebnik</span>[<span class="ruby-identifier">iii</span>] = <span class="ruby-identifier">m</span>
+
+    <span class="ruby-identifier">m</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">iii</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-ivar">@res</span> = <span class="ruby-string">&quot;[ i ]   &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">liczebnik</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;   |   &quot;</span>)
+
+  <span class="ruby-comment">################### liczebnik</span>
+
+
+  <span class="ruby-ivar">@resul</span> = <span class="ruby-string">&quot;[ pi ]  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">koniec2</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-ivar">@result</span> = <span class="ruby-identifier">liste</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+  <span class="ruby-ivar">@result2</span> = <span class="ruby-identifier">listt</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+  <span class="ruby-ivar">@result3</span> = <span class="ruby-identifier">liste</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+<span class="ruby-comment">############################################################   d+koniec2[e2]</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i2</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">size</span>)
+
+      <span class="ruby-identifier">liste2</span>[<span class="ruby-identifier">e2</span>]=<span class="ruby-identifier">koniec2</span>[<span class="ruby-identifier">i2</span>]
+      <span class="ruby-identifier">e2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">listt2</span>[<span class="ruby-identifier">t2</span>]=<span class="ruby-identifier">koniec2</span>[<span class="ruby-identifier">i2</span>]
+      <span class="ruby-identifier">t2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">i2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-comment"># odwrócenie tablicy .reverse</span>
+
+
+  <span class="ruby-ivar">@result4</span> = <span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-comment">############################################################  d + koszty_t[i3]</span>
+
+  <span class="ruby-comment">#######     Lista kosztów</span>
+
+  <span class="ruby-identifier">koszty_e</span> = <span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">reverse</span>
+
+  <span class="ruby-identifier">koszty_t</span> = <span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">reverse</span>
+
+
+   <span class="ruby-identifier">ee</span> = <span class="ruby-identifier">tt</span> = <span class="ruby-identifier">d</span>
+
+  <span class="ruby-identifier">vv</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">hhh</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">e3</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">ee3</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i3</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+
+
+              <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">size</span>)
+
+                <span class="ruby-identifier">ee</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">koszty_e</span>[<span class="ruby-identifier">e3</span>]
+
+                <span class="ruby-identifier">liste3</span>[<span class="ruby-identifier">ee3</span>]= <span class="ruby-identifier">ee</span>
+
+                <span class="ruby-identifier">e3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">ee3</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+
+
+
+              <span class="ruby-keyword">else</span>
+
+                <span class="ruby-identifier">tt</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">koszty_t</span>[<span class="ruby-identifier">t3</span>]
+
+                <span class="ruby-identifier">listt3</span>[<span class="ruby-identifier">t3</span>]= <span class="ruby-identifier">tt</span>
+
+                <span class="ruby-identifier">t3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+
+              <span class="ruby-keyword">end</span>
+
+
+              <span class="ruby-identifier">liste3</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">d</span>
+
+
+
+
+
+              <span class="ruby-identifier">vv</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">i3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+
+
+
+  <span class="ruby-ivar">@result5</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-ivar">@result6</span> = <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+
+  <span class="ruby-ivar">@result7</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+ <span class="ruby-comment">#####     SUMA kosztów</span>
+
+  <span class="ruby-identifier">koszty</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszty</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt3</span>
+
+
+  <span class="ruby-identifier">liste4</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt4</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">i4</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i5</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">bb</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i4</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>[<span class="ruby-identifier">bb</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+
+        <span class="ruby-comment">#liste3.reverse[bb] = 100</span>
+
+        <span class="ruby-comment">#liste4[i4]=liste3.reverse[bb] = d * alfa</span>
+
+      <span class="ruby-keyword">else</span>
+
+        <span class="ruby-identifier">liste4</span>[<span class="ruby-identifier">i4</span>]=<span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>[<span class="ruby-identifier">bb</span>] * <span class="ruby-identifier">alfa</span>
+
+      <span class="ruby-keyword">end</span>
+
+
+
+      <span class="ruby-identifier">bb</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+
+
+
+    <span class="ruby-identifier">i4</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i5</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+
+    <span class="ruby-identifier">listt4</span>[<span class="ruby-identifier">i5</span>]=<span class="ruby-identifier">listt3</span>[<span class="ruby-identifier">i5</span>] * <span class="ruby-identifier">beta</span>
+
+
+    <span class="ruby-identifier">i5</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+
+
+
+
+
+
+
+  <span class="ruby-ivar">@result8</span> = <span class="ruby-identifier">liste4</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt4</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-identifier">koszzz</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszzz</span> = <span class="ruby-identifier">liste4</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt4</span>
+
+
+
+  <span class="ruby-ivar">@result9</span> =  <span class="ruby-identifier">koszzz</span>.<span class="ruby-identifier">inject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>,<span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span> }
+
+
+
+
+
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:home</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- calculate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- calculate-method -->
+
+    
+      <div id="method-i-home" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">home</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="home-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">home</span>
+
+  <span class="ruby-ivar">@res</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@resul</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result2</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result3</span> = <span class="ruby-string">&#39;&#39;</span>
+
+  <span class="ruby-ivar">@result4</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result5</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result6</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result7</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result8</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result9</span> = <span class="ruby-string">&#39;&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- home-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- home-method -->
+
+    
+      <div id="method-i-kontakt" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">kontakt</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="kontakt-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 617</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">kontakt</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- kontakt-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- kontakt-method -->
+
+    
+      <div id="method-i-onas" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">onas</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="onas-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 614</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">onas</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- onas-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- onas-method -->
+
+    
+      <div id="method-i-pomoc" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pomoc</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="pomoc-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 611</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">pomoc</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- pomoc-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- pomoc-method -->
+
+    
+      <div id="method-i-szereg" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">szereg</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="szereg-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 348</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">szereg</span>
+
+
+  <span class="ruby-identifier">ary</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">uszeregowane</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">liste</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listx</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">liste2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">liste3</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt3</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koniec</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">koniec2</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszty_e</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">koszty_t</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+
+  <span class="ruby-identifier">ary</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:ary</span>][<span class="ruby-value">0</span>]
+
+  <span class="ruby-identifier">det</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:d</span>]
+  <span class="ruby-identifier">alf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:alfa</span>]
+  <span class="ruby-identifier">bet</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:beta</span>]
+
+  <span class="ruby-identifier">alfa</span> = <span class="ruby-identifier">alf</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">beta</span> = <span class="ruby-identifier">bet</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">d</span> = <span class="ruby-identifier">det</span>.<span class="ruby-identifier">to_i</span>
+
+
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i2</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i3</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-identifier">e</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">e2</span> = <span class="ruby-value">0</span>
+
+
+  <span class="ruby-identifier">t</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">t2</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">t3</span> = <span class="ruby-value">0</span>
+
+
+  <span class="ruby-identifier">list</span> = <span class="ruby-identifier">ary</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&#39;, &#39;</span>)
+  <span class="ruby-identifier">list</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">el</span><span class="ruby-operator">|</span> <span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">el</span>)) }
+  <span class="ruby-identifier">koniec</span> = <span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">x</span> } .<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-identifier">koniec2</span> =<span class="ruby-identifier">uszeregowane</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">x</span> }
+
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt</span>.<span class="ruby-identifier">size</span>)
+
+      <span class="ruby-identifier">liste</span>[<span class="ruby-identifier">e</span>]=<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+      <span class="ruby-identifier">e</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">listt</span>[<span class="ruby-identifier">t</span>]=<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+      <span class="ruby-identifier">t</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment">################### liczebnik</span>
+
+  <span class="ruby-identifier">iii</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">m</span> =<span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">liczebnik</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-keyword">while</span>  <span class="ruby-identifier">iii</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-identifier">liczebnik</span>[<span class="ruby-identifier">iii</span>] = <span class="ruby-identifier">m</span>
+
+    <span class="ruby-identifier">m</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">iii</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-ivar">@res</span> = <span class="ruby-string">&quot;[ i ]   &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">liczebnik</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;   |   &quot;</span>)
+
+  <span class="ruby-comment">################### liczebnik</span>
+
+
+  <span class="ruby-ivar">@resul</span> = <span class="ruby-string">&quot;[ pi ]  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">koniec2</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-ivar">@result</span> = <span class="ruby-identifier">liste</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+  <span class="ruby-ivar">@result2</span> = <span class="ruby-identifier">listt</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+  <span class="ruby-ivar">@result3</span> = <span class="ruby-identifier">liste</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-comment">############################################################   d+koniec2[e2]</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i2</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">size</span>)
+
+      <span class="ruby-identifier">liste2</span>[<span class="ruby-identifier">e2</span>]=<span class="ruby-identifier">koniec2</span>[<span class="ruby-identifier">i2</span>]
+      <span class="ruby-identifier">e2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">listt2</span>[<span class="ruby-identifier">t2</span>]=<span class="ruby-identifier">koniec2</span>[<span class="ruby-identifier">i2</span>]
+      <span class="ruby-identifier">t2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">i2</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-comment"># odwrócenie tablicy .reverse</span>
+
+
+  <span class="ruby-ivar">@result4</span> = <span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-comment">############################################################  d + koszty_t[i3]</span>
+
+  <span class="ruby-comment">#######     Lista kosztów</span>
+
+  <span class="ruby-identifier">koszty_e</span> = <span class="ruby-identifier">liste2</span>.<span class="ruby-identifier">reverse</span>
+
+  <span class="ruby-identifier">koszty_t</span> = <span class="ruby-identifier">listt2</span>.<span class="ruby-identifier">reverse</span>
+
+
+  <span class="ruby-identifier">ee</span> = <span class="ruby-identifier">tt</span> = <span class="ruby-identifier">d</span>
+
+  <span class="ruby-identifier">vv</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">hhh</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">e3</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">ee3</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i3</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+
+
+    <span class="ruby-keyword">if</span>  <span class="ruby-identifier">alfa</span>*<span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">beta</span>*(<span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">size</span>)
+
+      <span class="ruby-identifier">ee</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">koszty_e</span>[<span class="ruby-identifier">e3</span>]
+
+      <span class="ruby-identifier">liste3</span>[<span class="ruby-identifier">ee3</span>]= <span class="ruby-identifier">ee</span>
+
+      <span class="ruby-identifier">e3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+      <span class="ruby-identifier">ee3</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+
+
+
+    <span class="ruby-keyword">else</span>
+
+      <span class="ruby-identifier">tt</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">koszty_t</span>[<span class="ruby-identifier">t3</span>]
+
+      <span class="ruby-identifier">listt3</span>[<span class="ruby-identifier">t3</span>]= <span class="ruby-identifier">tt</span>
+
+      <span class="ruby-identifier">t3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+
+
+    <span class="ruby-keyword">end</span>
+
+
+    <span class="ruby-identifier">liste3</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">d</span>
+
+
+
+
+
+    <span class="ruby-identifier">vv</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">i3</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+
+
+
+  <span class="ruby-ivar">@result5</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-ivar">@result6</span> = <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+
+  <span class="ruby-ivar">@result7</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+
+  <span class="ruby-comment">#####     SUMA kosztów</span>
+
+  <span class="ruby-identifier">koszty</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszty</span> = <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt3</span>
+
+
+  <span class="ruby-identifier">liste4</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">listt4</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">i4</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">i5</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">bb</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i4</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>[<span class="ruby-identifier">bb</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+
+      <span class="ruby-comment">#liste3.reverse[bb] = 100</span>
+
+      <span class="ruby-comment">#liste4[i4]=liste3.reverse[bb] = d * alfa</span>
+
+    <span class="ruby-keyword">else</span>
+
+      <span class="ruby-identifier">liste4</span>[<span class="ruby-identifier">i4</span>]=<span class="ruby-identifier">liste3</span>.<span class="ruby-identifier">reverse</span>[<span class="ruby-identifier">bb</span>] * <span class="ruby-identifier">alfa</span>
+
+    <span class="ruby-keyword">end</span>
+
+
+
+    <span class="ruby-identifier">bb</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+
+
+
+    <span class="ruby-identifier">i4</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i5</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">listt3</span>.<span class="ruby-identifier">size</span>  <span class="ruby-keyword">do</span>
+
+
+    <span class="ruby-identifier">listt4</span>[<span class="ruby-identifier">i5</span>]=<span class="ruby-identifier">listt3</span>[<span class="ruby-identifier">i5</span>] * <span class="ruby-identifier">beta</span>
+
+
+    <span class="ruby-identifier">i5</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+
+
+
+
+
+
+
+
+  <span class="ruby-ivar">@result8</span> = <span class="ruby-identifier">liste4</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  |||  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt4</span>.<span class="ruby-identifier">join</span>( <span class="ruby-string">&quot;  |  &quot;</span>)
+
+  <span class="ruby-identifier">koszzz</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">koszzz</span> = <span class="ruby-identifier">liste4</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">listt4</span>
+
+
+
+  <span class="ruby-ivar">@result9</span> =  <span class="ruby-identifier">koszzz</span>.<span class="ruby-identifier">inject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>,<span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">x</span> }
+
+
+
+
+
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:szeregu</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- szereg-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- szereg-method -->
+
+    
+      <div id="method-i-szeregu" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">szeregu</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="szeregu-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 324</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">szeregu</span>
+
+  <span class="ruby-ivar">@res</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@resul</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result2</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result3</span> = <span class="ruby-string">&#39;&#39;</span>
+
+  <span class="ruby-ivar">@result4</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result5</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result6</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result7</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result8</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-ivar">@result9</span> = <span class="ruby-string">&#39;&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- szeregu-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- szeregu-method -->
+
+    
+      <div id="method-i-szereguj" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">szereguj</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="szereguj-source">
+            <pre><span class="ruby-comment"># File app/controllers/strony_statyczne_controller.rb, line 620</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">szereguj</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- szereguj-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- szereguj-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

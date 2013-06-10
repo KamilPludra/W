@@ -12,6 +12,11 @@ WS::Application.routes.draw do
 
   match 'calculate' => 'strony_statyczne#calculate', via: [:get, :post]
 
+  match 'szereguj/calculate' => 'strony_statyczne#szereguj/calculate', via: [:get, :post]
+
+  match '/szereguj',    to: 'strony_statyczne#szereguj', via: 'get'
+
+  match '/szereg',    to: 'strony_statyczne#szereg', via: [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

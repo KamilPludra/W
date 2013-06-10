@@ -1,0 +1,145 @@
+<% provide(:title, 'SZEREGUJ') %>
+
+<% if request.env["HTTP_USER_AGENT"] =~ /MSIE 8.0/%>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+<% end %>
+
+
+
+
+<div class="center hero-unit">
+
+  <h4><b>WSAD - weighted sum of absolute deviations</b></h4>
+
+
+    <h2><b>Uszereguj zadania:</b></h2>
+
+
+
+
+    <%= form_tag('/szereg') do %>
+
+        <%= label_tag(:ary, "Wpisz zadania (pi) oddzielając je przecinakami") %>
+        <%= number_field_tag "ary[]"%> <br />
+
+
+
+
+      <%= label_tag(:d, "Podaj wspólny żądany termin zakończenia d --->  |||  ") %>
+        <%= number_field_tag(:d) %><br />
+
+        <%= label_tag(:alfa, "Podaj jednostkowy koszt wykonania zadania PRZED terminem - Alfa") %>
+        <%= number_field_tag(:alfa) %><br />
+
+        <%= label_tag(:beta, "Podaj jednostkowy koszt wykonania zadania PO terminie - Beta") %>
+        <%= number_field_tag(:beta) %> <br />
+
+
+
+        <h2><b>Wynik:</b></h2>
+
+        Uszeregowane zadania
+        <%= text_field_tag(:kon, @res, :disabled => true) %>
+        <%= text_field_tag(:konie, @resul, :disabled => true) %>
+        <br>
+
+
+
+
+
+
+
+
+        <br>
+        Lista |E|
+        <%= text_field_tag(:koniec, @result, :disabled => true) %>
+        <br>
+        Lista |T|
+        <%= text_field_tag(:koniec2, @result2, :disabled => true) %>
+
+        <br>
+        Końcowy graf  [ i ]
+        <%= text_field_tag(:koniec3, @result3, :disabled => true) %>
+
+        <br>
+        Końcowy graf jako koszty  [ pi ]
+        <%= text_field_tag(:koniec4, @result4, :disabled => true) %>
+        <br>
+        Koszt listy |E|
+        <%= text_field_tag(:koniec5, @result5, :disabled => true) %>
+        <br>
+        Koszt listy |T|
+        <%= text_field_tag(:koniec6, @result6, :disabled => true) %>
+        <br>
+        Lista kosztów   [ pi ]
+        <%= text_field_tag(:koniec7, @result7, :disabled => true) %>
+        <br>
+        SUMA KOSZTÓW   [ pi ]
+        <%= text_field_tag(:koniec8, @result8, :disabled => true) %>
+        <br>
+        <%= text_field_tag(:koniec9, @result9, :disabled => true) %>
+        <br>
+
+        <%= submit_tag("Uszereguj zadania", class: "btn btn-large btn-primary") %>
+
+
+    <% end %>
+
+
+
+
+    <%= link_to image_tag("/Your-Bunch.png") %>  <br> <br>
+
+    WSAD - weighted sum of absolute deviations
+
+
+
+
+
+
+
+    <br>
+
+
+    <!--
+       <img src="http://chart.apis.google.com/chart?chxt=x,y&chd=s:SIQf9YOp&chtt=Problem+WSAD&chts=FF0000,&cht=bvs&chs=250x400&chxr=0,9,30"/>
+
+
+
+       <br><br>
+
+
+
+
+
+          <%= text_field_tag(:s) %>
+           <%= label_tag(:s, "Second Number") %><br />
+
+        -->
+
+
+
+  </h3>
+
+  <br>
+  <br>
+
+  <!-- <a href="http://www.put.poznan.pl/">Politechnika Poznańska</a>
+       -->
+
+</div>
+
+<div>
+
+  <p id="tagline" class="fulljustify">
+
+    <%= link_to image_tag("/PP.png", alt: "Politechnika Poznańska"), "http://www.put.poznan.pl/" %>
+
+    <%= link_to image_tag("/IAII.png", alt: "Instytut Automatyki i Inżynierii Informatycznej"), "http://www.cie.put.poznan.pl/" %>
+
+    <%= link_to image_tag("/WE.png", alt: "Wydział Informatyki Politechniki Poznańskiej"), "http://www.fcm.put.poznan.pl/" %>
+
+  </p>
+</div>
+
+

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>controller - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/README.html">README</a>
+  
+    <li class="file"><a href="./controller.html">controller</a>
+  
+    <li class="file"><a href="./install.html">install</a>
+  
+    <li class="file"><a href="./public/robots_txt.html">robots</a>
+  
+    <li class="file"><a href="./publicNOWE/robots_txt.html">robots</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ActiveSupport.html">ActiveSupport</a>
+  
+    <li><a href="./ActiveSupport/TestCase.html">ActiveSupport::TestCase</a>
+  
+    <li><a href="./WS.html">WS</a>
+  
+    <li><a href="./WS/Application.html">WS::Application</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./StronyStatyczneController.html">StronyStatyczneController</a>
+  
+    <li><a href="./StronyStatyczneHelper.html">StronyStatyczneHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>Skrypt uruchomiony nie, 2 cze 2013, 21:33:15 ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ gem install
+googlecharts Fetching: googlecharts-1.6.8.gemFetching:
+googlecharts-1.6.8.gem (  7%)Fetching: googlecharts-1.6.8.gem (
+14%)Fetching: googlecharts-1.6.8.gem ( 20%)Fetching:
+googlecharts-1.6.8.gem ( 27%)Fetching: googlecharts-1.6.8.gem (
+33%)Fetching: googlecharts-1.6.8.gem ( 40%)Fetching:
+googlecharts-1.6.8.gem ( 47%)Fetching: googlecharts-1.6.8.gem (
+53%)Fetching: googlecharts-1.6.8.gem ( 66%)Fetching:
+googlecharts-1.6.8.gem ( 73%)Fetching: googlecharts-1.6.8.gem (
+80%)Fetching: googlecharts-1.6.8.gem ( 86%)Fetching:
+googlecharts-1.6.8.gem ( 93%)Fetching: googlecharts-1.6.8.gem (
+99%)Fetching: googlecharts-1.6.8.gem (100%)Fetching:
+googlecharts-1.6.8.gem (100%) Successfully installed googlecharts-1.6.8
+Installing ri documentation for googlecharts-1.6.8 Done installing
+documentation for googlecharts (0 sec). 1 gem installed
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ bundle install Using
+rake (10.0.4)  Using i18n (0.6.4)  Using minitest (4.7.4)  Using multi_json
+(1.7.5)  Using atomic (1.1.9)  Using thread_safe (0.1.0)  Using tzinfo
+(0.3.37)  Using activesupport (4.0.0.rc1)  Using builder (3.1.4)  Using
+erubis (2.7.0)  Using rack (1.5.2)  Using rack-test (0.6.2)  Using
+actionpack (4.0.0.rc1)  Using mime-types (1.23)  Using polyglot (0.3.3) 
+Using treetop (1.4.12)  Using mail (2.5.4)  Using actionmailer (4.0.0.rc1) 
+Using activemodel (4.0.0.rc1)  Using activerecord-deprecated_finders
+(1.0.2)  Using arel (4.0.0)  Using activerecord (4.0.0.rc1)  Using
+bcrypt-ruby (3.0.1)  Using sass (3.2.9)  Using bootstrap-sass (2.3.1.0) 
+Using will_paginate (3.0.4)  Using bootstrap-will_paginate (0.0.9)  Using
+nokogiri (1.5.9)  Using xpath (2.0.0)  Using capybara (2.1.0)  Using ffi
+(1.8.1)  Using childprocess (0.3.9)  Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0)  Using coffee-script (2.2.0)  Using thor (0.18.1) 
+Using railties (4.0.0.rc1)  Using coffee-rails (4.0.0)  Using diff-lcs
+(1.2.4)  Using gherkin (2.12.0)  Using cucumber (1.3.2)  Using
+cucumber-rails (1.3.0)  Using database_cleaner (1.0.1) from
+git://github.com/bmabey/database_cleaner.git (at master)  Using
+factory_girl (4.2.0)  Using factory_girl_rails (4.2.0)  Using faker (1.1.2)
+Using googlecharts (1.6.8)  Using hash-deep-merge (0.1.1)  Using hike
+(1.2.2)  Using jbuilder (1.0.2)  Using jquery-rails (2.2.1)  Using json
+(1.8.0)  Using json_pure (1.8.0)  Using bundler (1.3.5)  Using
+lazy_high_charts (1.4.2)  Using tilt (1.4.1)  Using sprockets (2.10.0) 
+Using sprockets-rails (2.0.0.rc4)  Using rails (4.0.0.rc1)  Using rdoc
+(3.12.2)  Using rspec-core (2.13.1)  Using rspec-expectations (2.13.0) 
+Using rspec-mocks (2.13.1)  Using rspec-rails (2.13.1)  Using rubyzip
+(0.9.9)  Using sass-rails (4.0.0.rc1)  Using sdoc (0.3.20)  Using
+selenium-webdriver (2.0.0)  Using sqlite3 (1.3.7)  Using turbolinks (1.1.1)
+Using uglifier (2.1.1)  [32mYour bundle is complete![0m [32mGems in the
+group production were not installed.[0m [32mUse `bundle show [gemname]`
+to see where a bundled gem is installed.[0m ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ gem sources -a <a
+href="http://gems.github.com/">gems.github.com/</a> <a
+href="http://gems.github.com/">gems.github.com/</a> added to sources
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ sudo gem install
+mattetti-googlecharts</p>
+<dl class="rdoc-list label-list"><dt>sudo
+<dd>
+<p>password for pludi:</p>
+</dd></dl>
+
+<p>Fetching: mattetti-googlecharts-1.4.0.gemFetching:
+mattetti-googlecharts-1.4.0.gem (  4%)Fetching:
+mattetti-googlecharts-1.4.0.gem (  8%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 13%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 17%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 22%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 26%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 31%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 35%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 40%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 44%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 49%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 53%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 58%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 63%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 67%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 72%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 76%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 81%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 85%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 90%)Fetching:
+mattetti-googlecharts-1.4.0.gem ( 94%)Fetching:
+mattetti-googlecharts-1.4.0.gem (100%)Fetching:
+mattetti-googlecharts-1.4.0.gem (100%) Successfully installed
+mattetti-googlecharts-1.4.0 1 gem installed Installing ri documentation for
+mattetti-googlecharts-1.4.0… Installing RDoc documentation for
+mattetti-googlecharts-1.4.0… ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ sudo gem install
+googlecharts Fetching: googlecharts-1.6.8.gemFetching:
+googlecharts-1.6.8.gem (  7%)Fetching: googlecharts-1.6.8.gem (
+14%)Fetching: googlecharts-1.6.8.gem ( 20%)Fetching:
+googlecharts-1.6.8.gem ( 27%)Fetching: googlecharts-1.6.8.gem (
+33%)Fetching: googlecharts-1.6.8.gem ( 40%)Fetching:
+googlecharts-1.6.8.gem ( 47%)Fetching: googlecharts-1.6.8.gem (
+53%)Fetching: googlecharts-1.6.8.gem ( 60%)Fetching:
+googlecharts-1.6.8.gem ( 66%)Fetching: googlecharts-1.6.8.gem (
+73%)Fetching: googlecharts-1.6.8.gem ( 80%)Fetching:
+googlecharts-1.6.8.gem ( 86%)Fetching: googlecharts-1.6.8.gem (
+93%)Fetching: googlecharts-1.6.8.gem (100%)Fetching:
+googlecharts-1.6.8.gem (100%) Successfully installed googlecharts-1.6.8 1
+gem installed Installing ri documentation for googlecharts-1.6.8…
+Installing RDoc documentation for googlecharts-1.6.8…
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ sudo gem install
+mattetti-googlecharts Successfully installed mattetti-googlecharts-1.4.0 1
+gem installed Installing ri documentation for mattetti-googlecharts-1.4.0…
+Installing RDoc documentation for mattetti-googlecharts-1.4.0…
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ sudo gem install
+googlecharts Successfully installed googlecharts-1.6.8 1 gem installed
+Installing ri documentation for googlecharts-1.6.8… Installing RDoc
+documentation for googlecharts-1.6.8… ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;gchart&#39; require: nie znaleziono polecenia
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ Gchart.line(:data =&gt;
+[0, 40, 10, 70, 20]) bash: błąd składni przy nieoczekiwanym znaczniku
+`:data&#39; ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ gem install gchartrb
+Fetching: gchartrb-0.8.gemFetching: gchartrb-0.8.gem (  6%)Fetching:
+gchartrb-0.8.gem ( 14%)Fetching: gchartrb-0.8.gem ( 22%)Fetching:
+gchartrb-0.8.gem ( 31%)Fetching: gchartrb-0.8.gem ( 39%)Fetching:
+gchartrb-0.8.gem ( 47%)Fetching: gchartrb-0.8.gem ( 56%)Fetching:
+gchartrb-0.8.gem ( 64%)Fetching: gchartrb-0.8.gem ( 72%)Fetching:
+gchartrb-0.8.gem ( 81%)Fetching: gchartrb-0.8.gem ( 89%)Fetching:
+gchartrb-0.8.gem (100%)Fetching: gchartrb-0.8.gem (100%) Successfully
+installed gchartrb-0.8 Installing ri documentation for gchartrb-0.8 Done
+installing documentation for gchartrb (0 sec). 1 gem installed
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;gchart&#39; require: nie znaleziono polecenia
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;rubygems&#39; require: nie znaleziono polecenia
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;rubygems&#39;[K[K[K[K[K[K[K[K[K[K[K require: nie
+znaleziono polecenia ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;rubygems&#39;[2Pgchart&#39;gem install
+gchartrbGchart.line(:data =&gt; [0, 40, 10, 70,
+20])[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Prequire
+&#39;gchart&#39;sudo gem install
+googlechartsmattetti-googlecharts[9Pgooglechartsmattetti-googlechartsgem
+sources -a <a
+href="http://gems.github.com/[24Pbundle">gems.github.com/[24Pbundle</a>
+install Fetching gem metadata from <a
+href="https://rubygems.org/.........">rubygems.org/.….….</a> Fetching gem
+metadata from <a href="https://rubygems.org/..">rubygems.org/..</a>
+Resolving dependencies… Using rake (10.0.4)  Using i18n (0.6.4)  Using
+minitest (4.7.4)  Using multi_json (1.7.5)  Using atomic (1.1.9)  Using
+thread_safe (0.1.0)  Using tzinfo (0.3.37)  Using activesupport (4.0.0.rc1)
+Using builder (3.1.4)  Using erubis (2.7.0)  Using rack (1.5.2)  Using
+rack-test (0.6.2)  Using actionpack (4.0.0.rc1)  Using mime-types (1.23) 
+Using polyglot (0.3.3)  Using treetop (1.4.12)  Using mail (2.5.4)  Using
+actionmailer (4.0.0.rc1)  Using activemodel (4.0.0.rc1)  Using
+activerecord-deprecated_finders (1.0.2)  Using arel (4.0.0)  Using
+activerecord (4.0.0.rc1)  Using bcrypt-ruby (3.0.1)  Using sass (3.2.9) 
+Using bootstrap-sass (2.3.1.0)  Using will_paginate (3.0.4)  Using
+bootstrap-will_paginate (0.0.9)  Using bundler (1.3.5)  Using nokogiri
+(1.5.9)  Using xpath (2.0.0)  Using capybara (2.1.0)  Using ffi (1.8.1) 
+Using childprocess (0.3.9)  Using coffee-script-source (1.6.2)  Using
+execjs (1.4.0)  Using coffee-script (2.2.0)  Using thor (0.18.1)  Using
+railties (4.0.0.rc1)  Using coffee-rails (4.0.0)  Using diff-lcs (1.2.4) 
+Using gherkin (2.12.0)  Using cucumber (1.3.2)  Using cucumber-rails
+(1.3.0)  Using database_cleaner (1.0.1) from
+git://github.com/bmabey/database_cleaner.git (at master)  Using
+factory_girl (4.2.0)  Using factory_girl_rails (4.2.0)  Using faker (1.1.2)
+Installing google_visualr (2.1.7)  Using googlecharts (1.6.8)  Using
+hash-deep-merge (0.1.1)  Using hike (1.2.2)  Using jbuilder (1.0.2)  Using
+jquery-rails (2.2.1)  Using json (1.8.0)  Using json_pure (1.8.0)  Using
+lazy_high_charts (1.4.2)  Using tilt (1.4.1)  Using sprockets (2.10.0) 
+Using sprockets-rails (2.0.0.rc4)  Using rails (4.0.0.rc1)  Using rdoc
+(3.12.2)  Using rspec-core (2.13.1)  Using rspec-expectations (2.13.0) 
+Using rspec-mocks (2.13.1)  Using rspec-rails (2.13.1)  Using rubyzip
+(0.9.9)  Using sass-rails (4.0.0.rc1)  Using sdoc (0.3.20)  Using
+selenium-webdriver (2.0.0)  Using sqlite3 (1.3.7)  Using turbolinks (1.1.1)
+Using uglifier (2.1.1)  [32mYour bundle is complete![0m [32mGems in the
+group production were not installed.[0m [32mUse `bundle show [gemname]`
+to see where a bundled gem is installed.[0m ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ sudo gem install
+mattetti-googlecharts</p>
+<dl class="rdoc-list label-list"><dt>sudo
+<dd>
+<p>password for pludi:</p>
+</dd></dl>
+
+<p>Successfully installed mattetti-googlecharts-1.4.0 1 gem installed
+Installing ri documentation for mattetti-googlecharts-1.4.0… Installing
+RDoc documentation for mattetti-googlecharts-1.4.0…
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ require
+&#39;gchart&#39; require: nie znaleziono polecenia
+]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ googlecharts -v
+googlecharts: nie znaleziono polecenia ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ Gchart.line(:data =&gt;
+[0, 40, 10, 70, 20]) bash: błąd składni przy nieoczekiwanym znaczniku
+`:data&#39; ]0;pludi@pludi-VirtualBox:
+~/PROJEKTY/WSpludi@pludi-VirtualBox:~/PROJEKTY/WS$ irb 2.0.0-p195 :001
+&gt; require &#39;gchart&#39;</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+</pre>
+
+<p>2.0.0-p195 :002 &gt; Gchart.line(:data =&gt; [0, 40, 10, 70, 20])</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chd=s:AjI9R&amp;cht=lc&amp;chs=300x200&amp;chxr=0,0,70&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :003 &gt; Gchart.line(:title =&gt; “Matt vs Rob”, 2.0.0-p195
+:004 &gt;                 :data =&gt; [[300, 100, 30, 200], [100, 200, 300,
+10]],  2.0.0-p195 :005 &gt;                 :bar_colors =&gt;
+[&#39;FF0000&#39;,&#39;00FF00&#39;], 2.0.0-p195 :006 &gt;                
+:stacked =&gt; false, :size =&gt; &#39;400x200&#39;, 2.0.0-p195 :007 &gt;  
+:legend =&gt; [“Matt&#39;s Mojo”, “Rob&#39;s Mojo”] )</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chco=FF0000,00FF00&amp;chd=s:9UGp,Up9C&amp;chdl=Matt%27s+Mojo|Rob%27s+Mojo&amp;chtt=Matt+vs+Rob&amp;cht=lc&amp;chs=400x200&amp;chxr=0,300,300|1,100,300&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :008 &gt; Gchart.bar(:title =&gt; “Recent Chart Sexyness”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,  30, 10, 20, 100,
+20, 40, 100])</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chd=s:JSGM9MY9&amp;chtt=Recent+Chart+Sexyness&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,15,100&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :009 &gt; Gchart.bar(:title =&gt; “Recent Chart Sexyness”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,  30, 10, 20, 100,
+20, 40, 100])</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chd=s:JSGM9MY9&amp;chtt=Recent+Chart+Sexyness&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,15,100&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :010 &gt; Gchart.bar(:title =&gt; “Recent Chart Sexyness”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,  30, 10, 20, 100,
+20, 40,
+100])[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,
+3[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,
+30[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15,
+30,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30,
+1[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30,
+10[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30,
+10,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+2[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+20[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+20,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+1[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+10[C[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+100[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+100,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+2[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+20[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+20,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100, 20,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CP”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+20,[1@
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+20[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+2[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,
+[1@2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20, 100,[1@
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+100[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+10[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+“, :title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+1[C[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CW”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,
+[1@1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 20,[1@
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CA”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+20[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CD“,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10,
+2[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,)
+):)a)x)i)s)_)w)i)t)h)_)l)a)b)e)l)s) )=)&gt;)
+)[)&#39;)<a
+href="http://1P'">x)‘),)’)y)‘),)’)r)‘)])</a>)[<a
+href="http://1P">C</a>)[<a href="http://1P">1P])</a>)[<a
+href="http://1P">1P])</a>)[<a
+href="http://1P">1P])</a>)[C[C</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chxt=x&amp;chd=s:JSGM9MY9&amp;chtt=Problem+WSAD&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,15,100&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :011 &gt; Gchart.bar(:title =&gt; “Problem WSAD”, :title_color
+=&gt; &#39;FF0000&#39;, :data =&gt; [15, 30, 10, 220, 100, 20, 40, 100],
+:axis_with_labels =&gt;
+[&#39;x&#39;])[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+10,
+20[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+10,
+20,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1,
+10,
+20[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5,
+10,
+2[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+20[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+20,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1,
+20[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5,
+2[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[1P[1P[1@1[1@5[C[C[C[C[C[1P[1P[1P[1@1[1@5[C[C[C[C[1P[1P[1@1[1@5[C[C[C[C[1P[1P[1@1[1@5[C[C[C[C[C[1P[1P[1P[1@1[1@5</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chxt=x&amp;chd=s:99999999&amp;chtt=Problem+WSAD&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,15,15&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :012 &gt; Gchart.bar(:title =&gt; “Problem WSAD”, :title_color
+=&gt; &#39;FF0000&#39;, :data =&gt; [15, 15, 15, 115, 15, 15, 15, 15],
+:axis_with_labels =&gt;
+[&#39;x&#39;])[1P[1P[1@2[1@0[1P[1P[1@7[1P[1P[1@1[1@2[1P[1P[1@3[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+15[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+15,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8,
+15[1@,[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+8,
+15,[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+8, 15,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4,
+8, 15,[1@
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+4, 8, 15,
+[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+4, 8, 15,
+3[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2,
+4, 8, 15,
+[1@3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,
+4, 8, 15,
+3[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9,
+4, 8, 15,
+[1@3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chxt=x&amp;chd=s:SIQf9YOp&amp;chtt=Problem+WSAD&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,9,30&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :013 &gt; Gchart.bar(:title =&gt; “Problem WSAD”, :title_color
+=&gt; &#39;FF0000&#39;, :data =&gt; [9, 4, 8, 15,  30, 12, 7, 20],
+:axis_with_labels =&gt; [&#39;<a
+href="http://C,">x’])</a>)&#39;])y])&#39;])</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://chart.apis.google.com/chart?chxt=x,y&amp;chd=s:SIQf9YOp&amp;chtt=Problem+WSAD&amp;chts=FF0000,&amp;cht=bvs&amp;chs=300x200&amp;chxr=0,9,30&quot;</span>
+</pre>
+
+<p>2.0.0-p195 :014 &gt; 3+2</p>
+
+<pre class="ruby">=<span class="ruby-operator">&gt;</span> <span class="ruby-value">5</span>
+</pre>
+
+<p>2.0.0-p195 :015 &gt; 3+2Gchart.bar(:title =&gt; “Problem WSAD”,
+:title_color =&gt; &#39;FF0000&#39;, :data =&gt; [9, 4, 8, 15,  30, 12, 7,
+20], :axis_with_labels =&gt; [&#39;x&#39;,&#39;y&#39;]),)
+):)s)i)z)e) )=)&gt;) )</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
